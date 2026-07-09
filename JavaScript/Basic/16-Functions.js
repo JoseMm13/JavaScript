@@ -15,7 +15,7 @@ function myFunctionWithParams(name) {
 myFunctionWithParams("Alice")
 myFunctionWithParams("Nick klaus")
 myFunctionWithParams("Charlie")
-myFunctionWithParams("Nuni")
+myFunctionWithParams("Nui")
 
 
 // Anonymous function 
