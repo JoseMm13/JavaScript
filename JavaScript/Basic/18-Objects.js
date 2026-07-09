@@ -47,9 +47,9 @@ console.log(person)
 // Métodos (funciones)
 
 let person2 = {
-    name: "Núria",
+    name: "cunada",
     age: 26,
-    alias: "Nuni",
+    alias: "CDN",
     walk: function(){
         console.log("La persona camina")
     }
