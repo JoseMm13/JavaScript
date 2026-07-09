@@ -18,4 +18,4 @@
 
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
 
-// 10. Crea una función que calcule el factorial de un número dados
+// 10. Crea una función que calcule el factorial de un número dados.
