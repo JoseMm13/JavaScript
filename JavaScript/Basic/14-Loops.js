@@ -23,7 +23,7 @@ while (i < 5) {
 // Bucle infinito
 
 // wile (true) {
-
+    // codigo
 // }
 
 // do while
