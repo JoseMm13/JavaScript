@@ -35,7 +35,7 @@ console.log("Se encuentra en la posición: " + greeting.indexOf("Welcome"))
 console.log("Se encuentra en la posición: " + greeting.indexOf("José"))
 
 // Muestra la posición en la que se encuentra la palabra Núria
-console.log("Se encuentra en la posición: " + greeting.indexOf("Núria"))
+console.log("Se encuentra en la posición: " + greeting.indexOf("María"))
 
 /*
     Nota: En caso de no encontrar la palabra imagina que no existe en la cadena,
@@ -44,7 +44,7 @@ console.log("Se encuentra en la posición: " + greeting.indexOf("Núria"))
 
 console.log("La cadena contiene la palabra <<Welcome>>: " + greeting.includes("Welcome"))
 console.log("La cadena contiene la palabra <<José>>: " + greeting.includes("José"))
-console.log("La cadena contiene la palabra <<Núria>>: " + greeting.includes("Núria"))
+console.log("La cadena contiene la palabra <<María>>: " + greeting.includes("María"))
 
 /*
     Si solo quieres mostrar un solo pedazo de la cadena de texto debes 
@@ -55,7 +55,7 @@ console.log("La cadena contiene la palabra <<Núria>>: " + greeting.includes("N�
 console.log("Esto es el pedazo que quiero mostrar de la cadena de texto: " 
         +  greeting.slice(0, 10))
 
-console.log(greeting.replace("José Ángel", "Núria"))
+console.log(greeting.replace("José Ángel", "María"))
 
 // Template literals (Plantillas literales)
 
