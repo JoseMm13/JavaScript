@@ -47,4 +47,38 @@ handler.arrowGreeting();
 
 (function(){
     console.log("IIFE Classic")
-})()
+})();
+
+(() =>{
+    console.log("IIFE with arrow function")
+})();
+
+// Parameters Rest (...)
+
+// Parameters Rest (...) allows a function to accept an indefinite number of arguments as an array.
+
+function sum(... numbers){
+    let result = 0
+    for(let number of numbers){
+        result += number
+    }
+    return result
+}
+
+console.log(sum(1 ,2, 3, 4, 5))
+console.log(sum(13, 21))
+
+// Operator Spread (...)
+
+// The spread operator (...) allows an iterable (like an array or string) 
+// to be expanded in places where zero or more elements are expected.
+
+const numbers =  [13, 21, 34]
+function sumWithSpread(a, b, c){
+    return a + b + c
+}
+
+console.log(sumWithSpread(13,21,34)) // Without Spread
+console.log(sumWithSpread(...numbers))
+
+
