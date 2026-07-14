@@ -81,4 +81,30 @@ function sumWithSpread(a, b, c){
 console.log(sumWithSpread(13,21,34)) // Without Spread
 console.log(sumWithSpread(...numbers))
 
+// Closures
+
+function createCounter(){
+    let counter = 0
+    return function(){
+        counter++
+        console.log(`Counter: ${counter}`) 
+    }
+
+}
+/*
+    · What are we looking at here?
+    - Something very important is that the inner function, this function, 
+      the one inside, accesses the context of the outer function, 
+      but even maintaining the state of the variable after executing.
+*/
+
+const counter = createCounter()
+counter()
+counter()
+counter()
+counter()
+
+// Recursion
+
+
 
