@@ -106,5 +106,62 @@ counter()
 
 // Recursion
 
+function factorial(n) {
+    if (n <= 1) {
+        return 1
+    }
+    return n * factorial(n - 1)
+}
 
+console.log(factorial(5))
 
+// Partial functions
+
+function partialSum(a) {
+    return function (b, c) {
+        return sum(a, b, c)
+    }
+}
+
+const sumWith = partialSum(34)
+console.log(sumWith(21, 13))
+console.log(sumWith(13, 21))
+
+// Currying
+
+function currySum(a) {
+    return function (b) {
+        return function (c) {
+            return function (d) {
+                return sum(a, b, c, d)
+            }
+        }
+    }
+}
+
+const sumAB = currySum(1)(2)
+const sumC = sumAB(3)
+console.log(sumC(3))
+console.log(sumC(4))
+console.log(sumAB(5)(7))
+
+// Callbacks
+
+function processData(data, callback) {
+    const result = sum(...data)
+    callback(result)
+}
+
+function processResult(result) {
+    console.log(result)
+}
+
+function processResult2(result) {
+    console.log(`My result is: ${result}`)
+}
+
+processData([1, 2, 3], processResult)
+processData([1, 2, 3], processResult2)
+processData([1, 2, 3], (result) => {
+    console.log(`My result in the arrow function is: ${result}`)
+})
