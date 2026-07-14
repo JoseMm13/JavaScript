@@ -39,4 +39,12 @@ const handler = {
 
 handler.greeting()
 handler.arrowGreeting();
-//
+// ▲ ▲ ▲ Here, you must use a ; if you want it to execute only IIFE.  
+
+// IIFE (Immediately Invoked Function Expression)
+
+// -- IIFE classic
+
+(function(){
+    console.log("IIFE Classic")
+})()
